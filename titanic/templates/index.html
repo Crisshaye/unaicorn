@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Titanic Predictions</title>
+</head>
+<body>
+	<h1>This is working!</h1>
+	<h3>Get you titanic predictions here!</h3>
+	<p>Enter the details of a made up person on the titanic voyage</p>
+	<p>We will output the prediction</p>
+
+
+	<form action={% url 'results' %} method="GET">
+	{% csrf_token %}
+		<p>Pclass</p>
+		<input type="text" name="pclass">
+		<p>sex</p>
+		<input type="text" name="sex">
+		<p>age</p>
+		<input type="text" name="age">
+		<p>sibsp</p>
+		<input type="text" name="sibsp">
+		<p>parch</p>
+		<input type="text" name="parch">
+		<p>fare</p>
+		<input type="text" name="fare">
+		<p>embarked</p>
+		<input type="text" name="embarked">
+		<p>Title</p>
+		<input type="text" name="title">
+		<input type="submit">
+	</form>
+
+</body>
+</html>
