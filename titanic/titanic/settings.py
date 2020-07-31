@@ -26,7 +26,7 @@ SECRET_KEY = '%ethj$y#e_+-=eg%&hf9g#z9gpy&ai+davxm)1zx&4qp@^az9y'
 DEBUG = True
 
 ALLOWED_HOSTS = ['18.231.180.114','cristobalhaye.com','www.cristobalhaye.com']
-
+#
 
 # Application definition
 
@@ -116,5 +116,9 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
-
+import os.path
 STATIC_URL = '/static/'
+STATICFILES_DIRS = (os.path.join('static'),)
+
+
+

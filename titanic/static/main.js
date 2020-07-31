@@ -1,3 +1,3 @@
-funtion clicked(){
-	alert('Javascript working');
+function clicked() {
+	alert('Javascript working')
 }
