@@ -1,0 +1,17 @@
+[0;1;32m●[0m gunicorn.service - gunicorn daemon
+   Loaded: loaded (/etc/systemd/system/gunicorn.service; enabled; vendor preset: enabled)
+   Active: [0;1;32mactive (running)[0m since Wed 2020-07-29 16:44:47 UTC; 17min ago
+ Main PID: 21085 (gunicorn)
+   CGroup: /system.slice/gunicorn.service
+           ├─21085 /usr/bin/python3 /home/ubuntu/.local/bin/gunicorn --access-logfile - --workers 3 --bind unix:/home/ubuntu/unaicorn/titanic/titanic.sock titanic.wsgi:application
+           ├─21091 /usr/bin/python3 /home/ubuntu/.local/bin/gunicorn --access-logfile - --workers 3 --bind unix:/home/ubuntu/unaicorn/titanic/titanic.sock titanic.wsgi:application
+           ├─21093 /usr/bin/python3 /home/ubuntu/.local/bin/gunicorn --access-logfile - --workers 3 --bind unix:/home/ubuntu/unaicorn/titanic/titanic.sock titanic.wsgi:application
+           └─21094 /usr/bin/python3 /home/ubuntu/.local/bin/gunicorn --access-logfile - --workers 3 --bind unix:/home/ubuntu/unaicorn/titanic/titanic.sock titanic.wsgi:application
+
+Jul 29 16:44:47 ip-172-31-40-241 systemd[1]: Started gunicorn daemon.
+Jul 29 16:44:47 ip-172-31-40-241 gunicorn[21085]: [2020-07-29 16:44:47 +0000] [21085] [INFO] Starting gunicorn 20.0.4
+Jul 29 16:44:47 ip-172-31-40-241 gunicorn[21085]: [2020-07-29 16:44:47 +0000] [21085] [INFO] Listening at: unix:/home/ubuntu/unaicorn/titanic/titanic.sock (21085)
+Jul 29 16:44:47 ip-172-31-40-241 gunicorn[21085]: [2020-07-29 16:44:47 +0000] [21085] [INFO] Using worker: sync
+Jul 29 16:44:47 ip-172-31-40-241 gunicorn[21085]: [2020-07-29 16:44:47 +0000] [21091] [INFO] Booting worker with pid: 21091
+Jul 29 16:44:47 ip-172-31-40-241 gunicorn[21085]: [2020-07-29 16:44:47 +0000] [21093] [INFO] Booting worker with pid: 21093
+Jul 29 16:44:47 ip-172-31-40-241 gunicorn[21085]: [2020-07-29 16:44:47 +0000] [21094] [INFO] Booting worker with pid: 21094
